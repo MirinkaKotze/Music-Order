@@ -11,7 +11,7 @@ $Dark-blue: hsl(223, 47%, 23%);
 .screen {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;  
+    // box-sizing: border-box;  
     font-family: 'Red Hat Display', sans-serif; 
     font-weight: 500;
     font-size: 16px;   
@@ -20,7 +20,7 @@ $Dark-blue: hsl(223, 47%, 23%);
     background-color: $Pale-blue;
 }
 
-.container {
+.card__container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,14 +32,14 @@ $Dark-blue: hsl(223, 47%, 23%);
     max-width: 450px;
     margin: 50px 50px 0px 50px;
 
-    &_image{
+    &__background-image{
         border-radius: 20px 20px 0px 0px;
         max-height: 400px;
         max-width: 500px;
         margin-bottom: 40px;
     }
 
-    &_heading {
+    &__heading {
         font-size: 23px;
         color: $Dark-blue;
         text-align: center;
@@ -47,14 +47,14 @@ $Dark-blue: hsl(223, 47%, 23%);
         font-weight: 800;       
     }
 
-    &_description {
+    &__description {
         color: $blue;
         text-align: center;
         margin: 0px 60px 30px 60px;
         line-height: 25px;
     }
 
-    &_plan {
+    &__order {
         background-color:$Very-pale-blue;
         border-radius: 10px;
         display: flex;
@@ -63,7 +63,7 @@ $Dark-blue: hsl(223, 47%, 23%);
         margin: 0px 30px 30px 30px;
         max-width: 400px;
        
-        &-info {
+        &--info {
             padding-left: 15px;            
             &-name {
                 color: $Dark-blue;
@@ -75,7 +75,7 @@ $Dark-blue: hsl(223, 47%, 23%);
                 color: $blue;               
             }
         }
-        &-change {
+        &--button {
             color: $Bright-blue;
             font-size: 18px;
             font-weight: 700;
@@ -86,7 +86,7 @@ $Dark-blue: hsl(223, 47%, 23%);
         }        
     }
 
-    &_proceed {
+    &__proceed--button {
         border: none;
         border-radius: 15px;
         background-color: $Bright-blue;
@@ -94,22 +94,23 @@ $Dark-blue: hsl(223, 47%, 23%);
         font-weight: 800;
         padding: 20px;
         width: 400px;
-        margin: 0px 30px 30px 30px;
+        margin: 0px 30px 20px 30px;
         &:hover {
             background-color: $Pale-blue;
             color: $Bright-blue;
         }
     }
 
-    &_cancel {
-        text-align: center;
-        margin-bottom: 30px;
-        &-info{
-            color: $blue;      
-            font-weight: 800;          
-            &:hover {
-                color: $Bright-blue;
-            }
+    &__cancel--button {
+        border: none;
+        background-color: #ffff;
+        color: $blue;      
+        font-weight: 800; 
+        padding: 10px;
+        width: 400px;
+        margin: 0px 20px 20px 20px;
+        &:hover {
+            color: $Bright-blue;
         }
     }
 }
@@ -119,6 +120,6 @@ $Dark-blue: hsl(223, 47%, 23%);
     font-size: 11px;
     text-align: right;
     color: $Dark-blue;
-    margin: 0px 10px 10px 10px;
+    margin: 30px 10px 5px 10px;
     padding-right: 20px;
 }

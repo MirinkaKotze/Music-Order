@@ -1,7 +1,6 @@
 .screen {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
   font-family: "Red Hat Display", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -10,7 +9,7 @@
   background-color: #e0e8ff;
 }
 
-.container {
+.card__container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,26 +21,26 @@
   max-width: 450px;
   margin: 50px 50px 0px 50px;
 }
-.card_image {
+.card__background-image {
   border-radius: 20px 20px 0px 0px;
   max-height: 400px;
   max-width: 500px;
   margin-bottom: 40px;
 }
-.card_heading {
+.card__heading {
   font-size: 23px;
   color: #1f2f56;
   text-align: center;
   margin-bottom: 30px;
   font-weight: 800;
 }
-.card_description {
+.card__description {
   color: #7280a7;
   text-align: center;
   margin: 0px 60px 30px 60px;
   line-height: 25px;
 }
-.card_plan {
+.card__order {
   background-color: #f5f7ff;
   border-radius: 10px;
   display: flex;
@@ -50,28 +49,28 @@
   margin: 0px 30px 30px 30px;
   max-width: 400px;
 }
-.card_plan-info {
+.card__order--info {
   padding-left: 15px;
 }
-.card_plan-info-name {
+.card__order--info-name {
   color: #1f2f56;
   font-size: 18px;
   margin-bottom: 10px;
   font-weight: 700;
 }
-.card_plan-info-price {
+.card__order--info-price {
   color: #7280a7;
 }
-.card_plan-change {
+.card__order--button {
   color: #3829e0;
   font-size: 18px;
   font-weight: 700;
   padding-left: 120px;
 }
-.card_plan-change:hover {
+.card__order--button:hover {
   color: #7280a7;
 }
-.card_proceed {
+.card__proceed--button {
   border: none;
   border-radius: 15px;
   background-color: #3829e0;
@@ -79,21 +78,22 @@
   font-weight: 800;
   padding: 20px;
   width: 400px;
-  margin: 0px 30px 30px 30px;
+  margin: 0px 30px 20px 30px;
 }
-.card_proceed:hover {
+.card__proceed--button:hover {
   background-color: #e0e8ff;
   color: #3829e0;
 }
-.card_cancel {
-  text-align: center;
-  margin-bottom: 30px;
-}
-.card_cancel-info {
+.card__cancel--button {
+  border: none;
+  background-color: #ffff;
   color: #7280a7;
   font-weight: 800;
+  padding: 10px;
+  width: 400px;
+  margin: 0px 20px 20px 20px;
 }
-.card_cancel-info:hover {
+.card__cancel--button:hover {
   color: #3829e0;
 }
 
@@ -101,7 +101,7 @@
   font-size: 11px;
   text-align: right;
   color: #1f2f56;
-  margin: 0px 10px 10px 10px;
+  margin: 30px 10px 5px 10px;
   padding-right: 20px;
 }
 
